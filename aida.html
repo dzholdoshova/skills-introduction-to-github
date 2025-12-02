@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORDA - Шириндиктер</title>
+  <style>
+    :root {
+      --primary: #018abe;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9fc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #018abe;
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(1, 138, 190, 0.1);
+      transition: all 0.4s ease;
+      border: 2px solid var(--primary);
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin: 0 0 10px;
+      color: #018abe;
+    }
+
+    .product-info p {
+      margin: 0;
+      color: #444;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>ORDA шириндиктери 🍰</h2>
+
+  <div class="products">
+
+    <div class="product-card"><img src="imgs/1.jpg">
+      <div class="product-info">
+        <h3>Шириндик 1</h3>
+        <p>Даамдуу таттуу.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/2.jpg">
+      <div class="product-info">
+        <h3>Шириндик 2</h3>
+        <p>Жумшак жана назик.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/3.jpg">
+      <div class="product-info">
+        <h3>Шириндик 3</h3>
+        <p>ORDA өзгөчө даамы.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/4.jpg">
+      <div class="product-info">
+        <h3>Шириндик 4</h3>
+        <p>Чет элдик рецепт.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/5.jpg">
+      <div class="product-info">
+        <h3>Шириндик 5</h3>
+        <p>Таза ингредиенттер.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/6.jpg">
+      <div class="product-info">
+        <h3>Шириндик 6</h3>
+        <p>Абдан кооз.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/7.jpg">
+      <div class="product-info">
+        <h3>Шириндик 7</h3>
+        <p>Жыпар жыттуу.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/8.jpg">
+      <div class="product-info">
+        <h3>Шириндик 8</h3>
+        <p>Майрамдык таттуу.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/9.jpg">
+      <div class="product-info">
+        <h3>Шириндик 9</h3>
+        <p>Бал кошулган.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/10.jpg">
+      <div class="product-info">
+        <h3>Шириндик 10</h3>
+        <p>Кремдүү даам.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/11.jpg">
+      <div class="product-info">
+        <h3>Шириндик 11</h3>
+        <p>Жеңил текстура.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/12.jpg">
+      <div class="product-info">
+        <h3>Шириндик 12</h3>
+        <p>Кофе менен сонун.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/13.jpg">
+      <div class="product-info">
+        <h3>Шириндик 13</h3>
+        <p>Шоколаддуу.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/14.jpg">
+      <div class="product-info">
+        <h3>Шириндик 14</h3>
+        <p>Жайкы даам.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/15.jpg">
+      <div class="product-info">
+        <h3>Шириндик 15</h3>
+        <p>Өзгөчө дизайн.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/16.jpg">
+      <div class="product-info">
+        <h3>Шириндик 16</h3>
+        <p>Балмуздак менен.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/17.jpg">
+      <div class="product-info">
+        <h3>Шириндик 17</h3>
+        <p>Фирмалык рецепт.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/18.jpg">
+      <div class="product-info">
+        <h3>Шириндик 18</h3>
+        <p>Жумшак печенье.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/19.jpg">
+      <div class="product-info">
+        <h3>Шириндик 19</h3>
+        <p>Сүттүү крем.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/20.jpg">
+      <div class="product-info">
+        <h3>Шириндик 20</h3>
+        <p>Даамдуу капкейк.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/21.jpg">
+      <div class="product-info">
+        <h3>Шириндик 21</h3>
+        <p>Кара шоколад.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/22.jpg">
+      <div class="product-info">
+        <h3>Шириндик 22</h3>
+        <p>Жеңил десерт.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/23.jpg">
+      <div class="product-info">
+        <h3>Шириндик 23</h3>
+        <p>Фрукталуу.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/24.jpg">
+      <div class="product-info">
+        <h3>Шириндик 24</h3>
+        <p>ORDA стили.</p>
+      </div>
+    </div>
+    <div class="product-card"><img src="imgs/25.jpg">
+      <div class="product-info">
+        <h3>Шириндик 25</h3>
+        <p>Супер даам.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
